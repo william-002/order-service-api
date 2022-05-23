@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-Projeto de Order Service com CRUD, utlizando Apis Rest e protocolo HTTP, através do Java com Spring Boot e JPA para persistência de dados, com algumas validações e tratamentos de exceções.
+Sistema Gerenciador de Ordens de Serviço que poderá ser implementado  com CRUD, utlizando Apis Rest e protocolo HTTP, através do Java com Spring Boot, JPA e Hibernate para persistência de dados, com algumas validações e tratamentos de exceções.
 
 Realizado o deploy da api na nuvem(heroku) para ser consumido pelo front-end.
 
-Front-end utilizando componentes angular com html,css e typescript para consumir a api rest, e ter uma interface minimamente funcional, podendo gerenciar livros e categorias.
+Front-end utilizando componentes angular com html,css e typescript para consumir a api rest, e ter uma aplicação web funcional, podendo gerenciar clientes, técnicos e ordens de serviço.
 
 Front-end implementado no github pages.
 
