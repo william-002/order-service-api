@@ -32,7 +32,11 @@ os: OS ={
   }
 
   cancel(): void {
-    this.router.navigate(['os'])
+    if(this.os.status == "ENCERRADO"){
+    this.router.navigate(['os/closed'])
+    }else{
+      this.router.navigate(['os'])
+    }
   }
 
 }

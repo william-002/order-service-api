@@ -45,7 +45,11 @@ export class OsUpdateComponent implements OnInit {
   update(): void{
     this.service.update(this.os).subscribe(resposta =>{
       this.service.message("Ordem de Serviço atualizada com sucesso!")
-      this.router.navigate(['os'])
+      if(this.os.status == 2){
+        this.router.navigate(['os/closed'])
+        }else{
+          this.router.navigate(['os'])
+        }
     })
   }
 
@@ -62,7 +66,11 @@ export class OsUpdateComponent implements OnInit {
   }
 
   cancel():void {
-    this.router.navigate(['os'])
+    if(this.os.status == 2){
+      this.router.navigate(['os/closed'])
+      }else{
+        this.router.navigate(['os'])
+      }
   }
 
 

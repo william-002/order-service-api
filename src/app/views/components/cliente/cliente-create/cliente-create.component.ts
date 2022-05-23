@@ -22,6 +22,7 @@ export class ClienteCreateComponent implements OnInit {
   nome = new FormControl('',[Validators.minLength(2)])
   cpf = new FormControl('',[Validators.minLength(11)])
   telefone = new FormControl('',[Validators.minLength(11)])
+  
 
   constructor(private router: Router, private service: ClienteService) { }
 
