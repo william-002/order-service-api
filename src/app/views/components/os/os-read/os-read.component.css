@@ -1,0 +1,62 @@
+.create{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    
+ }
+ 
+ .create h1{
+   text-align: center;
+   font-size: 2rem;
+ }
+ 
+ .create button{
+   width: 100%;
+   margin: 1rem auto;
+ 
+    
+ }
+ 
+ .container {
+     width: 80%;
+     margin-right: auto;
+     margin-left: auto;
+     margin-bottom: 20px;
+   
+     
+   }
+ 
+   table {
+       width: 100%;
+       background: linear-gradient(to right, #000003, #0073c0cb);
+   }
+ 
+   mat-paginator{
+     background: linear-gradient(to right, #000003, #0073c0cb);
+   }
+ 
+ 
+   #edit{
+     color: rgb(195, 216, 6);
+   }
+ 
+   #delete{
+     color: rgb(226, 27, 27);
+   }
+ 
+   button{
+     color: rgb(172, 169, 169);
+   }
+
+
+   td.baixa{
+     color: rgb(0, 255, 0);
+   }
+
+   td.media {
+     color: rgb(255, 255, 0);
+   }
+
+   td.alta {
+     color: rgb(255, 0, 0);
+   }

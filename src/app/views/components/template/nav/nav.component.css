@@ -1,0 +1,25 @@
+
+.container{
+    height: 85%;
+    background: linear-gradient(to right, #000003, #0073c0cb);
+
+     
+}
+.sidenav{
+    background: linear-gradient(to right, #000003, #0073c0cb);
+    width: 13rem;
+   
+}
+
+
+i {
+    margin-right: .5rem;
+    color: rgb(185, 190, 196);
+    
+}
+
+button{
+    margin: .5rem auto 0 .5rem;
+    color: rgb(185, 190, 196);
+    
+}

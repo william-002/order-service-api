@@ -1,0 +1,54 @@
+.container {
+    width: 80%;
+    margin: auto;
+    
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.labels {
+   
+    display: flex; 
+    justify-content: space-evenly;
+
+}
+
+mat-form-field{
+    margin-left: 1rem;
+    
+}
+
+
+@media (max-width: 800px){
+    .labels {
+      display: flex;
+      justify-content: flex-start;
+     
+    
+    }
+
+}
+
+
+.full-width{
+    width: 100%;
+    color: brown;
+}
+
+textarea {
+    min-height: 4rem;
+    max-height: 12rem;
+    color: rgb(255, 254, 254);
+}
+
+button {
+    width: 70%;
+    margin-bottom: .5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
