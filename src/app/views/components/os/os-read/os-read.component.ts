@@ -24,7 +24,7 @@ export class OsReadComponent implements AfterViewInit {
   constructor(private service: OsService, private router: Router, private tecnicoService: TecnicoService, private clienteService: ClienteService){}
 
   ngAfterViewInit() {
-   
+    this.paginator._intl.itemsPerPageLabel="Ordens por página";
     this.findAll();
   }
 

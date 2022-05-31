@@ -26,7 +26,7 @@ export class OsClosedComponent implements AfterViewInit {
  
 
   ngAfterViewInit() {
-   
+    this.paginator._intl.itemsPerPageLabel="Ordens por página";
     this.findAll();
   }
 

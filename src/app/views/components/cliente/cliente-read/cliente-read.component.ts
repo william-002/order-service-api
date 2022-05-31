@@ -22,7 +22,7 @@ export class ClienteReadComponent implements AfterViewInit {
   constructor(private service: ClienteService, private router: Router){}
 
   ngAfterViewInit() {
-   
+    this.paginator._intl.itemsPerPageLabel="Clientes por página";
     this.findAll();
   }
 

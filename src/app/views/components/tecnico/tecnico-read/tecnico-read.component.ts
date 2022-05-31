@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { Tecnico } from 'src/app/models/tecnico';
 import { TecnicoService } from 'src/app/services/tecnico.service';
 
+
+
 @Component({
   selector: 'app-tecnico-read',
   templateUrl: './tecnico-read.component.html',
@@ -12,6 +14,7 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
 })
 export class TecnicoReadComponent implements AfterViewInit {
 
+  
   tecnicos: Tecnico[] = []
 
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'action'];
@@ -22,7 +25,7 @@ export class TecnicoReadComponent implements AfterViewInit {
   constructor(private service: TecnicoService, private router: Router){}
 
   ngAfterViewInit() {
-   
+    this.paginator._intl.itemsPerPageLabel="Técnicos por página";
     this.findAll();
   }
 
@@ -37,6 +40,7 @@ export class TecnicoReadComponent implements AfterViewInit {
 navigateToCreate():void{
   this.router.navigate(['tecnicos/create'])
 }
+
 
 }
 
