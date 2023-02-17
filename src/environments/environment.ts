@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://back-end-os.herokuapp.com'
+  baseUrl: 'https://new-os-api-production.up.railway.app'
 };
 
 /*

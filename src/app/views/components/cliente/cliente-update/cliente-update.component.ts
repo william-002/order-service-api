@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { UntypedFormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -20,9 +20,9 @@ export class ClienteUpdateComponent implements OnInit {
     telefone: ''
   }
 
-  nome = new FormControl('',[Validators.minLength(2)])
-  cpf = new FormControl('',[Validators.minLength(11)])
-  telefone = new FormControl('',[Validators.minLength(11)])
+  nome = new UntypedFormControl('',[Validators.minLength(2)])
+  cpf = new UntypedFormControl('',[Validators.minLength(11)])
+  telefone = new UntypedFormControl('',[Validators.minLength(11)])
 
   constructor(private router: Router, private service: ClienteService, private route: ActivatedRoute) { }
 
